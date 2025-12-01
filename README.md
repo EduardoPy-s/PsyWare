@@ -1,9 +1,25 @@
-# PsyWare - Sistema de Estoque
+PsyWare – Sistema de Gerenciamento de Estoque
 
-1. Ligar o XAMPP (MySQL)
-2. Dar dois cliques no arquivo: **Instalar_Banco.bat**
-3. Rodar: `mvn clean javafx:run`
+Sistema de estoque desenvolvido em **Java + Swing + MySQL** para gerenciar produtos, categorias e controle de itens.
 
-Login: root | root
+---
 
-Pronto!
+Tecnologias utilizadas
+- Java (Swing)
+- MySQL 8+
+- JDBC
+- Maven
+
+---
+
+Instalação
+
+1) Instalar o banco de dados
+
+2) Caso sua senha MySQL seja diferente, edite a classe Conexao.java e altere:
+USER e PASS
+
+Abra o terminal:
+
+mysql -u root -p < database/install.sql
+
