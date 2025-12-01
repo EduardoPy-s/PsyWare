@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="psyware.controller.DashboardController">
+    <top>
+        <VBox styleClass="header">
+            <HBox alignment="CENTER_LEFT">
+                <Label text="PsyWare" styleClass="header-title"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Relatórios" onAction="#abrirRelatorios" styleClass="btn-header"/>
+                <Button text="Sair" onAction="#sair" styleClass="btn-header"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="20">
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="toolbar">
+
+                <Button text="+" onAction="#novoProduto"
+                        styleClass="btn-add" prefWidth="90"/>
+
+                <TextField promptText="Pesquisar produto..." fx:id="txtBusca" prefWidth="230"/>
+
+                <ComboBox fx:id="cbCategoria" prefWidth="140"
+                          promptText="Categoria"/>
+
+                <Button text="Buscar" onAction="#buscar" prefWidth="80"/>
+
+            </HBox>
+
+            <TableView fx:id="tabelaProdutos" prefHeight="540"/>
+        </VBox>
+    </center>
+</BorderPane>

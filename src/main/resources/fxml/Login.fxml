@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="psyware.controller.LoginController"
+           style="-fx-background-color: linear-gradient(to bottom right, #2b6cb0, #3182ce);">
+
+    <VBox alignment="CENTER"
+          spacing="20"
+          maxWidth="380"
+          style="-fx-background-color: white; -fx-padding: 40; -fx-background-radius: 12;">
+
+        <Label text="PsyWare" styleClass="title-label"/>
+        <Label text="Gerenciamento de Periféricos" styleClass="subtitle-label"/>
+
+        <VBox spacing="15" alignment="CENTER">
+            <TextField fx:id="txtUsuario" prefWidth="250" promptText="Usuário"/>
+            <PasswordField fx:id="txtSenha" prefWidth="250" promptText="Senha"/>
+            <Button text="Entrar" prefWidth="250" styleClass="btn-primary" onAction="#login"/>
+        </VBox>
+
+        <Label fx:id="lblMensagem" styleClass="error-label"/>
+    </VBox>
+
+</StackPane>

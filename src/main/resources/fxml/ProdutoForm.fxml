@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="psyware.controller.ProdutoFormController">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <Label text="Cadastro de Produto" styleClass="title-label"/>
+    <GridPane hgap="15" vgap="15">
+        <TextField promptText="Nome do Produto" fx:id="txtNome" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <TextArea promptText="Descrição" fx:id="txtDescricao" prefHeight="80" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"/>
+        <TextField promptText="Quantidade" fx:id="txtQuantidade" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField promptText="Preço" fx:id="txtPreco" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <TextField promptText="Categoria" fx:id="txtCategoria" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField promptText="Nome da imagem (ex: mouse.jpg)" fx:id="txtImagem" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    </GridPane>
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Salvar" onAction="#salvar" styleClass="btn-primary" prefWidth="150"/>
+        <Button text="Cancelar" onAction="#cancelar" style="-fx-background-color:#858796;-fx-text-fill:white;" prefWidth="150"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,82 @@
+.root {
+    -fx-background-color: #f8f9fc;
+    -fx-font-family: "Segoe UI";
+}
+
+.title-label {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4e73df;
+}
+
+.subtitle-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #858796;
+}
+
+.btn-primary {
+    -fx-background-color: #4e73df;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12 30 12 30;
+    -fx-background-radius: 8;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2e59d9;
+}
+
+.btn-add {
+    -fx-background-color: #1cc88a;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-background-radius: 50;
+    -fx-font-size: 16px;
+}
+
+.btn-add:hover {
+    -fx-background-color: #17a673;
+}
+
+.header {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-color: #e3e6f0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4e73df;
+}
+
+.btn-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5a5c69;
+    -fx-font-size: 15px;
+    -fx-padding: 8 20;
+}
+
+.btn-header:hover {
+    -fx-background-color: #eaecf4;
+    -fx-background-radius: 8;
+}
+
+.toolbar {
+    -fx-padding: 20 30 0 30;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e3e6f0;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #d1d5ea;
+}
+
+.error-label {
+    -fx-text-fill: #e74a3b;
+    -fx-font-size: 14px;
+}
